@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeevan Travels</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>JEEVAN </span>Travels</a>
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#book">book</a>
+      <a href="#packages">packages</a>
+      <a href="#services">services</a>
+      <a href="#footer">about</a>
+      <a href="#review">review</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here...">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
+  </header>
+
+  <!-- Login Form Container -->
+  <div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+      <h3>Login</h3>
+      <input type="email" class="box" placeholder="Enter your email">
+      <input type="password" class="box" placeholder="Enter your password">
+      <input type="submit" value="Login Now" class="btn">
+      <input type="checkbox" id="remember">
+      <label for="remember">Remember me</label>
+      <p>Forgot password? <a href="#">Click here</a></p>
+      <p>Don't have an account? <a href="javascript:void(0)" class="register-link">Register Now</a></p>
+    </form>
+  </div>
+
+  <!-- Registration Form Container -->
+  <div class="registration-form-container">
+    <i class="fas fa-times" id="reg-form-close"></i>
+    <form action="">
+      <h3>Register</h3>
+      <input type="text" class="box" placeholder="Enter your name">
+      <input type="email" class="box" placeholder="Enter your email">
+      <input type="password" class="box" placeholder="Enter your password">
+      <input type="password" class="box" placeholder="Confirm your password">
+      <input type="submit" value="Register Now" class="btn">
+      <p>Already have an account? <a href="javascript:void(0)" class="login-link-from-reg">Login Now</a></p>
+    </form>
+  </div>
+
+  <!-- Home Section Starts -->
+  <section class="home" id="home">
+    <div class="content">
+      <h3>Adventure is worthwhile</h3>
+      <p>Discover new places with us. Adventure awaits!</p>
+      <a href="#packages" class="btn">Discover More</a>
+    </div>
+    <div class="controls">
+      <span class="vid-btn active" data-src="Images/vid-1.mp4"></span>
+      <span class="vid-btn" data-src="Images/vid-2.mp4"></span>
+      <span class="vid-btn" data-src="Images/vid-3.mp4"></span>
+      <span class="vid-btn" data-src="Images/vid-4.mp4"></span>
+      <span class="vid-btn" data-src="Images/vid-5.mp4"></span>
+    </div>
+    <div class="video-container">
+      <video src="Images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+  </section>
+  <!-- Home Section Ends -->
+
+  <!-- Book Section Starts -->
+  <section class="book" id="book">
+    <h1 class="heading">
+      <span>b</span>
+      <span>o</span>
+      <span>o</span>
+      <span>k</span>
+      <span class="space"></span>
+      <span>n</span>
+      <span>o</span>
+      <span>w</span>
+    </h1>
+    <div class="row">
+      <div class="image">
+        <img src="Images/book-img.svg" alt="">
+      </div>
+      <form action="">
+        <div class="inputBox">
+          <h3>Where to</h3>
+          <input type="text" placeholder="Place name">
+        </div>
+        <div class="inputBox">
+          <h3>How many</h3>
+          <input type="number" placeholder="Number of guests">
+        </div>
+        <div class="inputBox">
+          <h3>Arrivals</h3>
+          <input type="date">
+        </div>
+        <div class="inputBox">
+          <h3>Leaving</h3>
+          <input type="date">
+        </div>
+        <input type="submit" class="btn" value="Book Now">
+      </form>
+    </div>
+  </section>
+  <!-- Book Section Ends -->
+
+  <!-- Packages Section Starts -->
+  <section class="packages" id="packages">
+    <h1 class="heading">
+      <span>p</span>
+      <span>a</span>
+      <span>c</span>
+      <span>k</span>
+      <span>a</span>
+      <span>g</span>
+      <span>e</span>
+      <span>s</span>
+    </h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="images/p-1.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> Mumbai</h3>
+          <p>Explore Mumbai's vibrant heritage, bustling markets, and stunning seaside views.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">₹4500 <span>₹6000</span></div>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/p-2.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> Hawaii</h3>
+          <p>Relax on Hawaii's pristine beaches and enjoy a tropical paradise experience.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">₹7000 <span>₹9500</span></div>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/p-3.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> Sydney</h3>
+          <p>Discover Sydney's iconic landmarks and enjoy breathtaking harbor views.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">₹6500 <span>₹8500</span></div>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/p-4.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> Paris</h3>
+          <p>Experience the romance and art of Paris with exquisite cuisine and historic charm.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">₹8000 <span>₹10000</span></div>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/p-5.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> Tokyo</h3>
+          <p>Immerse yourself in Tokyo's blend of tradition and modern innovation.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">₹7500 <span>₹9500</span></div>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+      <div class="box">
+        <img src="images/p-6.jpg" alt="">
+        <div class="content">
+          <h3><i class="fas fa-map-marker-alt"></i> Egypt</h3>
+          <p>Uncover ancient mysteries and marvel at the majestic pyramids of Egypt.</p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="price">₹5000 <span>₹7000</span></div>
+          <a href="#" class="btn">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Packages Section Ends -->
+
+  <!-- Services Section Starts -->
+  <section class="services" id="services">
+    <h1 class="heading">
+      <span>s</span>
+      <span>e</span>
+      <span>r</span>
+      <span>v</span>
+      <span>i</span>
+      <span>c</span>
+      <span>e</span>
+      <span>s</span>
+    </h1>
+    <div class="box-container">
+      <div class="box">
+        <i class="fas fa-hotel"></i>
+        <h3>Affordable Hotels</h3>
+        <p>Stay in comfort with our handpicked hotels offering top amenities and service.</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-utensils"></i>
+        <h3>Food and Drinks</h3>
+        <p>Relish local and international cuisines at the best dining spots around the world.</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Safety Guide</h3>
+        <p>Travel with peace of mind with our comprehensive safety guidelines and support.</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-globe-asia"></i>
+        <h3>Around the World</h3>
+        <p>Explore diverse cultures and stunning landscapes with our global travel packages.</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-plane"></i>
+        <h3>Fastest Travel</h3>
+        <p>Experience efficient travel with our curated routes and quick booking options.</p>
+      </div>
+      <div class="box">
+        <i class="fas fa-hiking"></i>
+        <h3>Adventures</h3>
+        <p>Embrace thrilling adventures that cater to every travel enthusiast's dream.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section Ends -->
+
+ 
+
+  <!-- Review Section Starts -->
+  <section class="review" id="review">
+    <h1 class="heading">
+      <span>r</span>
+      <span>e</span>
+      <span>v</span>
+      <span>i</span>
+      <span>e</span>
+      <span>w</span>
+    </h1>
+    <div class="swiper-container review-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/pic1.png" alt="">
+            <h3>John Deo</h3>
+            <p>My experience with Jeevan Travels was outstanding. Their attention to detail and personalized service made my trip unforgettable.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/pic2.png" alt="">
+            <h3>John Deo</h3>
+            <p>Exceptional service and well-organized itineraries. I felt completely cared for throughout my journey.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/pic3.png" alt="">
+            <h3>John Deo</h3>
+            <p>Their travel packages are thoughtfully designed and cater to all your needs. Highly recommended!</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/pic4.png" alt="">
+            <h3>John Deo</h3>
+            <p>Jeevan Travels exceeded my expectations. Their expertise made planning my vacation a breeze.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Review Section Ends -->
+
+  <!-- Contact Section Starts -->
+  <section class="contact" id="contact">
+    <h1 class="heading">
+      <span>c</span>
+      <span>o</span>
+      <span>n</span>
+      <span>t</span>
+      <span>a</span>
+      <span>c</span>
+      <span>t</span>
+    </h1>
+    <div class="row">
+      <div class="image">
+        <img src="images/contact-img.svg" alt="">
+      </div>
+      <form action="">
+        <div class="inputBox">
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="inputBox">
+          <input type="number" placeholder="Phone">
+          <input type="text" placeholder="Subject">
+        </div>
+        <textarea placeholder="Message" cols="30" rows="10"></textarea>
+        <input type="submit" class="btn" value="Send Message">
+      </form>
+    </div>
+  </section>
+  <!-- Contact Section Ends -->
+
+  <!-- Footer Section Starts -->
+  <section class="footer" id="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>About Us</h3>
+        <p>Jeevan Travels is committed to delivering genuine travel experiences. Trust us to make your journey extraordinary.</p>
+      </div>
+      <div class="box">
+        <h3>Branch Locations</h3>
+        <a href="#">India</a>
+        <a href="#">USA</a>
+        <a href="#">Japan</a>
+        <a href="#">France</a>
+      </div>
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="#home">Home</a>
+        <a href="#book">Book</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#">Facebook</a>
+        <a href="https://www.instagram.com/jeevan_2410/">Instagram</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+    <h1 class="credit">Created by <span>Jeevan @2025</span> | All rights reserved!</h1>
+  </section>
+  <!-- Footer Section Ends -->
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
