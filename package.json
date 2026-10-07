@@ -1,0 +1,12 @@
+{
+  "name": "jeevan-travels",
+  "private": true,
+  "type": "module",
+  "description": "Jeevan Travels: a trip planner on a 3D dotted globe with live weather; no build step",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
